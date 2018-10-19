@@ -9,9 +9,8 @@ seems to be playing an old school text-based adventure
 game on his computer. There are corridors leading to the
 south and east. The exit is to the west.""",
 
-    "exits": {"south": "Admins",
-              "east": "Tutor",
-              "west": "Parking"} # COMPLETE ME! ADD EXITS!
+    "exits": {"south": "Admins", "east": "Tutor", "west": "Parking"},
+
 }
 
 room_admins = {
@@ -22,7 +21,8 @@ room_admins = {
 room. Inside you notice Matt "MJ" John and Simon Jones. They
 ignore you. To the north is the reception.""",
 
-    "exits":{"north": "Reception"}# ADD EXITS HERE!
+    "exits":  {"north": "Reception"},
+
 }
 
 room_tutor = {
@@ -34,7 +34,8 @@ stares at his huge monitor, ignoring you completely.
 On the desk you notice a cup of coffee and an empty
 pack of biscuits. The reception is to the west.""",
 
-    "exits":{"west": "Reception"}    # ADD EXITS HERE!
+    "exits": {"west": "Reception"},
+
 }
 
 room_parking = {
@@ -45,8 +46,8 @@ room_parking = {
 You can go south to the COMSC reception, or east to the
 general office.""",
 
-    "exits":{"south": "Reception",
-             "east": "General Office"}    # ADD EXITS HERE!
+    "exits": {"east": "Office", "south": "Reception"},
+
 }
 
 room_office = {
@@ -58,7 +59,8 @@ room_office = {
 in their eyes. If you go west you can return to the
 Queen's Buildings.""",
 
-    "exits":{"west": "Parking"}    # ADD EXITS HERE!
+    "exits": {"west": "Parking"},
+
 }
 
 
