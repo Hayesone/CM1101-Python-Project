@@ -72,8 +72,9 @@ def print_inventory_items(items):
     item_list = list_of_items(items)            #creates a variable with the list of items from the player
     if len(item_list) > 0:                      #if there is more than 0 items in the inv
         print("You have " + item_list + ".")    #prints the list of items in inv
-        print(str(current_mass) + "/10.5kg")
         print()
+        print(str(current_mass) + "/10.5kg")
+
 
 def print_room(room):
     """This function takes a room as an input and nicely displays its name
