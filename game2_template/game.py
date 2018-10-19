@@ -68,13 +68,18 @@ def print_inventory_items(items):
     <BLANKLINE>
 
     """
-    global current_mass
+
     item_list = list_of_items(items)            #creates a variable with the list of items from the player
     if len(item_list) > 0:                      #if there is more than 0 items in the inv
         print("You have " + item_list + ".")    #prints the list of items in inv
         print()
-        print(str(current_mass) + "/10.5kg")
 
+def print_mass():
+
+    global current_mass
+
+    if current_mass > 0.0:
+        print(str(current_mass) + "/10.5kg\n")
 
 def print_room(room):
     """This function takes a room as an input and nicely displays its name
@@ -358,6 +363,7 @@ def main():
         # Display game status (room description, inventory etc.)
             print_room(current_room)
             print_inventory_items(inventory)
+            print_mass()
 
         # Show the menu with possible actions and ask the player
             command = menu(current_room["exits"], current_room["items"], inventory)
